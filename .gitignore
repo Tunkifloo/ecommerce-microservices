@@ -99,3 +99,6 @@ coverage/
 ### Backups ###
 *.bak
 *.backup
+
+### Enviroments ###
+.env
