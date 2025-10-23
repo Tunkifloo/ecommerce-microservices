@@ -102,3 +102,4 @@ coverage/
 
 ### Enviroments ###
 .env
+.env.local

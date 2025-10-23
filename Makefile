@@ -53,7 +53,7 @@ infra-status: ## Ver estado de los contenedores
 
 db-connect: ## Conectar a PostgreSQL (admin)
 	@echo "$(CYAN)Conectando a PostgreSQL como admin...$(RESET)"
-	docker exec -it ecommerce-postgres psql -U admin -d postgres
+	@docker exec -it $${POSTGRES_CONTAINER_NAME:-ecommerce-postgres} psql -U $${POSTGRES_USER:-admin} -d $${POSTGRES_DB:-postgres}
 
 db-connect-users: ## Conectar a db_usuarios
 	docker exec -it ecommerce-postgres psql -U user_usuarios -d db_usuarios
