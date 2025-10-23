@@ -1,3 +1,17 @@
+### Java ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+### Maven ###
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -7,11 +21,81 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-# https://maven.apache.org/wrapper/#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+
+### Eclipse ###
+.metadata
 .classpath
+.project
+.settings/
+bin/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+### Spring Boot ###
+spring-shell.log
+
+### Logs ###
+logs/
+*.log
+log/
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Docker ###
+# No ignores docker-compose.yml, pero sí los volúmenes locales
+docker/volumes/
+*.env.local
+
+### PostgreSQL ###
+*.sql.backup
+pgdata/
+
+### Kafka ###
+kafka-logs/
+zookeeper-data/
+
+### Configuración Sensible ###
+# Config Server - repositorio local (si usas file://)
+config-repo/
+# NO ignores los archivos YAML de ejemplo, solo los que tengan datos reales
+application-prod.yml
+application-secrets.yml
+*.key
+*.pem
+
+### Build Tools ###
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+### Tests ###
+*.test
+coverage/
+.nyc_output/
+
+### Temporales ###
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+
+### Backups ###
+*.bak
+*.backup
